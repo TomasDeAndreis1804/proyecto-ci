@@ -56,4 +56,7 @@ jobs:
       - name: List buckets
         run: aws s3 ls
         
+      - name: Upload file to S3
+        run: aws s3 cp funciones.py s3://bucket-bd-tdar-2/
+  
         
